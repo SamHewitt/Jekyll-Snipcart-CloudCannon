@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include head.html %}
+<body>
+   {% include navbar.html %}
+ {% include header.html %}
+ <main class="main">
+ <div class="products">
+ {{ content }}
+ </div>
+ </main>
+
+</body>
+<script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"></script>
+<div id="snipcart" data-api-key="MTBmOWIwNGQtOWQ3Mi00NThjLWE2MzMtNzgzOWZlZDU2Y2VkNjM3NTI0MDAyMDQ0NDU0MTM4" hidden></div>
+</html>
+
+<style>
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+body {
+	grid-template-rows: auto 1fr auto
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+body {
+	grid-template-rows: auto 1fr auto
+}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+body {
+	grid-template-rows: auto 1fr auto
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+body {
+  display: grid;
+	grid-template-rows: auto 1fr auto
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+body {
+  display: grid;
+	grid-template-rows: auto 1fr auto
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+body {
+  display: grid;
+	grid-template-rows: auto 1fr auto
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+.product__image {
+  width: 20%;
+  height: auto;
+	border-radius: 4px;
+	box-shadow: 0 18.025px 43.775px rgba(0,0,0,.25)
+}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+</style>

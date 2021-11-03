@@ -1,0 +1,22 @@
+<!--<header class="header">-->
+<!--  <h1 style="display:table; margin: right; color:#008CBA">IdeaSpace</h1>-->
+<!--    <a href="#" class="snipcart-checkout" style="text-decoration: none;">-->
+<!--      <div class="snipcart-summary" style="display:table; margin:right;">-->
+<!--        <span style="text-decoration: none;">Cart 🛒</span>-->
+<!--        <span class="snipcart-total-price"></span>-->
+<!--      </div>-->
+<!--    </a>-->
+<!--</header>-->
+
+
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+ <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+ <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+ <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css" />
+ <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+</head>
